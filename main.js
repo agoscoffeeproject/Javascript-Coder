@@ -1,43 +1,65 @@
-console.log("1: Galería estandar")
-console.log("2: Arco Frontal")
-console.log("3: Arco cruzado")
-console.log("4: Galería Premium")
+function TipoDeCafe(nombre, tamaño, leche, canela, chocolate){
+    this.nombre= nombre;
+    this.tamaño= tamaño;
+    this.leche= leche;
+    this.canela= canela;
+    this.chocolate= chocolate;
+}
 
-let precioGaleriaEstandar = 38150
-let precioArcoFrontal = 40875
-let precioArcoCruzado = 41000
-let precioGaleriaPremium = 42238
+let espresso =  new TipoDeCafe("Espresso", "30ml", false, false, false)
+let capuccino = new TipoDeCafe("Capuccino", "250ml", true, true, false)
+let mocha = new TipoDeCafe("Mocha", "250ml", true, false, true)
 
-let tipoDeGaleria = Number(prompt("Ingrese el tipo de galeria que desea"))
-
-let metroCuadrado = Number(prompt("Ingrese el tamaño de galería deseado en m2"))
+let cafeteria = [espresso, capuccino, mocha];
 
 
-
-function precioGaleriaTotal(){
-    if(tipoDeGaleria===1){
-        alert("El precio total de su galeria es: " + "$" + precioGaleriaEstandar*metroCuadrado)
-    } else if (tipoDeGaleria===2){
-        alert("El precio total de su galeria es: " + "$" + precioArcoFrontal*metroCuadrado)
-    } else if (tipoDeGaleria===3){
-        alert("El precio total de su galeria es: " + "$" + precioArcoCruzado*metroCuadrado)
-    } else if (tipoDeGaleria===4){
-        alert("El precio total de su galeria es: " + "$" + precioGaleriaPremium*metroCuadrado)
-    } else {
-        alert("Debe seleccionar una opción correcta: 1, 2, 3 o 4")
-    }
+function hacerEspresso(){
+    document.write('<img src="img/espresso.jpg">')
+    console.log(espresso)
 
 }
 
-while(metroCuadrado>=10 && metroCuadrado<=200){
-    precioGaleriaTotal(); break 
-} 
+function hacerCapuccino(){
+    document.write('<img src="img/capuccino2.webp">')
+    console.log(capuccino)
 
-if(metroCuadrado<=10){
-    alert("No realizamos instalaciones de galerías menores a 10 m2")
-} else if(metroCuadrado>=200){
-    alert("No realizamos instalaciones de galerías mayores a 200 m2")
 }
+
+function hacerMocha(){
+    document.write('<img src="img/cafemocha.webp">')
+    console.log(mocha)
+}
+
+alert ("Seleccione el cafe de su agrado")
+let seleccion= prompt("1: Espresso, 2: Capuccino, 3: Mocha")
+alert("En la consola podrá observar los ingredientes necesarios")
+
+
+if(seleccion==1){
+    hacerEspresso()
+} else if(seleccion==2){
+    hacerCapuccino()
+} else if (seleccion==3){
+    hacerMocha()
+} else {
+    alert("Debe seleccionar unas de las opciones (1, 2 o 3)")
+}
+
+let jugos = ["naranja", "limonada", "pomelo"]
+
+let carta = cafeteria.concat(jugos)
+
+console.log("--------------------------------------------------------")
+console.log("---------Nuestras opciones de la carta incluyen---------")
+
+for (item=0; item<carta.length; item+=1){
+    console.log(carta[item])
+}
+
+
+
+
+
 
 
 
