@@ -13,6 +13,7 @@ let mocha = new TipoDeCafe("Mocha", "250ml", true, false, true)
 let cafeteria = [espresso, capuccino, mocha];
 
 
+
 function hacerEspresso(){
     document.write('<img src="img/espresso.jpg">')
     console.log(espresso)
@@ -34,6 +35,14 @@ alert ("Seleccione el cafe de su agrado")
 let seleccion= prompt("1: Espresso, 2: Capuccino, 3: Mocha")
 alert("En la consola podrá observar los ingredientes necesarios")
 
+if(seleccion==1|2|3){
+console.log("--------------------------------------------------------")
+console.log("-----------El café que ha seleccionado es:--------------")
+console.log("--------------------------------------------------------")
+}
+
+
+
 
 if(seleccion==1){
     hacerEspresso()
@@ -51,10 +60,12 @@ let carta = cafeteria.concat(jugos)
 
 console.log("--------------------------------------------------------")
 console.log("---------Nuestras opciones de la carta incluyen---------")
+console.log("--------------------------------------------------------")
 
-for (item=0; item<carta.length; item+=1){
-    console.log(carta[item])
-}
+
+carta.forEach(function(elemento) {
+    console.log(elemento);
+})
 
 
 
