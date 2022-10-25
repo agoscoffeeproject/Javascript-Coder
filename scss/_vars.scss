@@ -1,0 +1,50 @@
+//restaurar padding
+$marginStart:0;
+$paddingStart:0;
+
+
+//background
+
+$mainBackground:url(../img/wood.webp);
+$backgroundCenter:center; 
+$bg-white:white;
+$bg-titulos:whitesmoke;
+
+//widths
+
+$widthTotal:100%;
+$widthRedes:35px;
+$widthAuto:auto;
+$widthRedesTablet:40px;
+$widthMaxDesktop:1200px;
+
+//heights
+
+$heightRedes:35px;
+$heightAuto:auto;
+$heightRedesTablet:40px;
+$heightTotal:100%;
+
+
+//navBar
+
+$topPegado:0;
+$navBackground:rgba(65,47,45,0.7819502801120448) 51%;
+$paddingNavBar:0rem 0.5rem;
+
+//navBarAnimaciones
+$navContent: "";
+$disBlock: block;
+$heightAnimation: 4px;
+$bg-black: black;
+$navTransform: scale(0.1);
+$navtransformAfter: scale(1.1);
+$navTransformOrigin: center;
+$navTransition: transform .5s;
+
+//displays
+
+$dis-flex:flex;
+$flex-col-nowrap:column nowrap;
+$content-evenly:space-evenly;
+$flex-row:row nowrap;

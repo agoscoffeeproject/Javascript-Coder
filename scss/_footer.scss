@@ -1,0 +1,34 @@
+
+footer {
+	color: white;
+ 	max-width: $widthTotal;
+	@include display1(flex,column nowrap,space-evenly);
+	padding: 1rem;
+	align-items: center;
+	align-content: center;
+}
+
+
+.img__figure {
+	width: $widthTotal;
+}
+
+.imagenpie {
+	width: $widthTotal;
+}
+
+.iconos__redes {
+	max-width: $widthRedes;
+	max-height: $heightRedes;
+	padding-right: 1rem;
+}
+
+.bg-form {
+	background-color: #5E4F47;
+}
+
+ figcaption {
+ 	text-align:$text-center;
+ 	font-weight: 700;
+ 	font-size:$textSm;
+ }

@@ -1,0 +1,114 @@
+
+
+* {
+	margin: $marginStart;
+	padding: $paddingStart;
+}
+
+html {
+	font-size:$fontSize;
+	font-family:$fontMain;
+}
+
+body{
+	background-image: $mainBackground;
+	background-position: $backgroundCenter;
+	max-width: $widthTotal;
+	margin: auto;
+}
+
+form {
+	h3 {
+	color: whitesmoke;
+	}
+}
+
+.cajas__flex {
+	background-color: $bg-white;
+ 	max-width: $widthTotal;
+ 	@include display1(flex,column nowrap,space-evenly);
+	margin: 1rem 1.5rem;
+}
+
+.titulos {
+	padding: 1rem 2rem;
+	text-align:$text-center;
+
+}
+
+h1 {
+	@extend .titulos;
+	font-family: $secondaryFont;
+	max-width: $widthTotal;
+	background-color: $bg-titulos;
+}
+
+
+.titulos__recomendados {
+	font-size: map-get($map:$fontSizes,$key:'fSize5');
+	@extend .titulos;
+	color: whitesmoke;
+}
+
+.cajas__flex {
+	h3 {
+		padding: 0.5rem 2rem;
+	}
+}
+
+article.cajas__flex { 
+	div {
+	p {
+		font-size: map-get($map:$fontSizes,$key:'fSize4');
+		padding: 0.5rem 2rem;
+	}
+	}
+}
+
+.img__cafeteras {
+	max-width: $widthTotal;
+	max-height: $heightAuto;
+}
+
+.img__consumo {
+	max-width: $widthTotal;
+}
+
+.img__historia{
+	max-width: $widthTotal;
+	max-height: $heightAuto;
+}
+
+form {
+	padding: 0.5rem 2rem
+}
+
+form {
+	label {
+		width: $widthTotal;
+		padding-top: 1rem;
+		h5 {
+			font-size: map-get($map:$fontSizes,$key:'fSize4')
+		}
+	}
+}
+
+.btn-enviar {
+	font-size: map-get($map:$fontSizes,$key:'fSize3')
+}
+
+
+input, textarea, select, option {
+	  margin-bottom: 1rem;
+	  width: $widthTotal;
+	  background : none;
+
+}
+
+.error_404 {
+	width: 100%;
+
+}
+
+
+

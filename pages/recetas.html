@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Cafeterías recomendadas para visitar en Córdoba Capital">
+	<meta name="keywords" content="cafe, cafeterías, infusión, recomendados, cordoba, le dureau, es tostadores, kaapeh, confiteria">
+	<meta name="author" content="Agostina Brutti">
+
+	<title>Cafe: Recomendados en Córdoba</title>
+	<link rel="shortcut icon" href="../img/icono-cafe.png">
+	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  	
+</head>
+
+<body>
+
+<!-- EMPIEZA NAV -->	
+	<nav class="navbar sticky-top navbar-expand-md navbar-light">
+		  <div class="container-fluid">
+		    <a class="navbar-brand text-light" href="../index.html">
+		    	<img src="../img/icono-cafe.png" alt="Logo Cafe">
+		    </a>
+		    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon bg-light"></span>
+		    </button>
+		    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		      <ul class="navbar-nav text-center">
+		        <li class="nav-item">
+		          <a class="nav-link text-light" aria-current="page" href="../index.html">Historia</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-light" href="../pages/preparacion.html">Preparación</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-light" href="../pages/consumo.html">Consumo</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link text-light" href="../pages/recetas.html">Recetas</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+	</nav>
+<!-- TERMINA NAV -->
+
+<!-- EMPIEZA HEADER -->		
+	<header>	
+		<img src="../img/header1.webp" alt="Imagen de cafeteria" class="header-img">
+	</header>
+<!-- TERMINA HEADER -->
+	
+<!-- EMPIEZA MAIN -->	
+	<main class="max-width">
+
+		<h1>PREPARA TU CAFE FAVORITO</h1>
+		
+		<h2 class="titulos__recomendados">Estas son las opciones de cafe que puedes elegir.</h2>
+
+		<article class="cajas__flex">
+			<figure class="cajas__preparacion"><img src="../img/ristretto.webp" alt="Cafe Delirante"><button type="submit" id="btnRistretto" class="btn_receta">RISTRETTO</button>
+			<button type="submit" id="btnCerrar" class="btn_receta">ocultar</button>	
+				<figcaption><div id="opcion1"></div></figcaption>
+			</figure>
+			<figure class="cajas__preparacion"><img src="../img/cafe-bombon.webp" alt="Cafe Delirante"><button type="submit" class="btn_receta" id="btnCafeBombon">CAFE BOMBON</button>
+				<button type="submit" id="btnCerrar2" class="btn_receta">ocultar</button>	
+				<figcaption><div id="opcion2"></div></figcaption>
+			</figure>
+
+		</article>
+
+		<article class="cajas__flex">
+			<figure class="cajas__preparacion"><img src="../img/frappe.webp" alt="Cafe Delirante"><button type="submit" class="btn_receta" id="btnFrappe">FRAPPE</button>
+				<button type="submit" id="btnCerrar3" class="btn_receta">ocultar</button>	
+				<figcaption><div id="opcion3"></div></figcaption>
+			</figure>
+			<figure class="cajas__preparacion"><img src="../img/capuccino.webp"  alt="Cafe Delirante"><button type="submit" class="btn_receta" id="btnCapuccino">CAPUCHINO</button>
+				<button type="submit" id="btnCerrar4" class="btn_receta">ocultar</button>	
+				<figcaption><div id="opcion4"></div></figcaption>
+			</figure>
+
+		</article>
+
+	</main>		
+<!-- TERMINA MAIN -->	
+
+	<div class="d-flex justify-content-center bg-dark max-width">
+		<form class="row g-3 mt-2 w-75">
+				<h3>Dejanos tus sugerencias de recetas para sumar a nuestra web</h3>
+				<div class="col-md-6 text-light mt-0">
+				<label for="tipoDeCafe" class="form-label"><h5>Nombre del tipo de cafe:</h5></label>
+				<input type="text" class="form-control" id="tipoDeCafe">
+				</div>
+
+				<div class="col-md-6 text-light mt-0">
+					<label for="tamaño" class="form-label"><h5>Tamaño en mililitros:</h5></label>
+					<input type="text" class="form-control" id="tamaño">
+					</div>
+
+			<div class="col-12">
+				<input type="button" value="Enviar" class="btn_receta"  id="boton_submit" >
+			</div>
+
+			<div id="resultado_form"></div>
+		</form>
+		
+		</div>
+
+
+
+
+
+
+	<script src="../js/main.js"></script>
+<!--Bootstrap Bundle with Popper-->
+
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!--JS para WOW -->	 
+	 <script src="../js/wow.min.js"></script>
+    <script>new WOW().init();</script>	
+
+</body>
+
+</html>

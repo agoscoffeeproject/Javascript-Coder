@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Fira+Sans&display=swap");
+nav {
+  top: 0;
+  background: rgba(65, 47, 45, 0.7819502801) 51%;
+}
+nav div ul li {
+  padding: 0rem 0.5rem;
+}
+nav div ul li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: black;
+  transform: scale(0.1);
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+
+a:hover::after {
+  transform: scale(1.1);
+}
+
+header img.header-img {
+  max-width: 100%;
+}
+
+header img.header-img1 {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-image: url(../img/wood.webp);
+  background-position: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+form h3 {
+  color: whitesmoke;
+}
+
+.cajas__flex {
+  background-color: white;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  margin: 1rem 1.5rem;
+}
+
+.titulos, .titulos__recomendados, h1 {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  max-width: 100%;
+  background-color: whitesmoke;
+}
+
+.titulos__recomendados {
+  font-size: 1.8rem;
+  color: whitesmoke;
+}
+
+.cajas__flex h3 {
+  padding: 0.5rem 2rem;
+}
+
+article.cajas__flex div p {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+}
+
+.img__cafeteras {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.img__consumo {
+  max-width: 100%;
+}
+
+.img__historia {
+  max-width: 100%;
+  max-height: auto;
+}
+
+form {
+  padding: 0.5rem 2rem;
+}
+
+form label {
+  width: 100%;
+  padding-top: 1rem;
+}
+form label h5 {
+  font-size: 1.6rem;
+}
+
+.btn-enviar {
+  font-size: 1.4rem;
+}
+
+input, textarea, select, option {
+  margin-bottom: 1rem;
+  width: 100%;
+  background: none;
+}
+
+.error_404 {
+  width: 100%;
+}
+
+footer {
+  color: white;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding: 1rem;
+  align-items: center;
+  align-content: center;
+}
+
+.img__figure {
+  width: 100%;
+}
+
+.imagenpie {
+  width: 100%;
+}
+
+.iconos__redes {
+  max-width: 35px;
+  max-height: 35px;
+  padding-right: 1rem;
+}
+
+.bg-form {
+  background-color: #5E4F47;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.btn_receta{
+  color: #0099CC;
+  background: #0099CC;
+  border: 2px solid #0099CC;
+  border: none;
+  align-items: center;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+
+}
+
+.btn_receta:hover{
+  background-color: #8ac2d4;
+  color: white;
+}
+
+
+
+/*EMPIEZA TABLET*/ /*EMPIEZA TABLET*/ /*EMPIEZA TABLET*/
+@media only screen and (min-width: 768px) {
+  #icono {
+    padding-left: 20px;
+  }
+  nav {
+    flex-direction: row;
+  }
+  nav ul li a {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  div.cajas__flex p {
+    font-size: 1.6rem;
+  }
+  .img__historia {
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  #redes {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1rem 0.8rem;
+  }
+  .cajas__cafe {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 1rem 0.8rem;
+  }
+  .imagenpie {
+    max-width: auto;
+    height: 400px;
+  }
+  .iconos__redes {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  article.cajas__flex p {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .img__consumo {
+    width: 100%;
+    margin: auto;
+  }
+  .img__cafeteras {
+    width: 100%;
+    margin: auto;
+  }
+  .cajas__flex h3 {
+    font-size: 1.6rem;
+  }
+  figcaption {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .max-width {
+    max-width: 1200px;
+    margin: auto;
+  }
+  nav ul li a {
+    font-size: 1.6rem;
+  }
+  .cajas__flex {
+    margin: auto;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .width-car {
+    width: 50%;
+  }
+  .img__historia {
+    width: 100%;
+    margin: auto;
+  }
+  .img__cafeteras {
+    transition: all 600ms;
+  }
+  .img__cafeteras:hover {
+    transform: scale(1.1);
+  }
+  .cajas__preparacion {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+  }
+  section.cajas__flex {
+    flex-direction: column;
+  }
+  header img.header-img1 {
+    width: 100%;
+  }
+  .img__consumo {
+    height: 800px;
+  }
+  #seguir {
+    font-size: 1.8rem;
+  }
+  #frase {
+    font-size: 0.8rem;
+    padding-top: 1rem;
+  }
+  #redes {
+    margin-bottom: 1rem;
+    padding-right: 10px;
+  }
+  .cajas__cafe {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 1rem 0.8rem;
+  }
+  #seguir {
+    text-align: center;
+  }
+  #frase {
+    text-align: center;
+  }
+  #redes {
+    display: flex;
+  }
+  #cafefm {
+    padding: 0.2rem;
+  }
+  #delirante {
+    padding: 0 0.2rem;
+  }
+  #cafemt {
+    padding: 0.2rem;
+  }
+  #cafest {
+    padding: 0.2rem;
+  }
+  .img__figure {
+    width: 250px;
+    transition: all 600ms;
+  }
+  .img__figure:hover {
+    transform: scale(1.1);
+  }
+  .titulo__med {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
